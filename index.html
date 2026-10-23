@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dipak Neupane | Backend and Cloud Software Engineer</title>
+<meta name="description" content="Dipak Neupane is a backend and cloud software engineer in Auckland with 7+ years in fintech: Java microservices, Kubernetes, AWS, Kafka and big data.">
+<meta property="og:title" content="Dipak Neupane | Backend and Cloud Software Engineer">
+<meta property="og:description" content="Java microservices, Kubernetes, AWS, Kafka and big data. 7+ years in fintech.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%81%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2f7;--surface:#fff;--ink:#14213d;--muted:#566175;--line:#cbd3e1;--accent:#2f5bea;--accent-ink:#fff;--term:#14213d;--termink:#cfe0ff;--ok:#2fbf71;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1626;--surface:#172036;--ink:#e8edf7;--muted:#9aa6bd;--line:#2b3753;--accent:#7a9bff;--accent-ink:#0f1626;--term:#0a0f1c}}
+:root[data-theme="dark"]{--bg:#0f1626;--surface:#172036;--ink:#e8edf7;--muted:#9aa6bd;--line:#2b3753;--accent:#7a9bff;--accent-ink:#0f1626;--term:#0a0f1c}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Instrument Sans",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+body>header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+body>header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font:800 22px "Bricolage Grotesque",sans-serif;text-decoration:none;white-space:nowrap;flex:none;margin-right:18px}
+nav{display:flex;gap:18px;overflow-x:auto}
+nav a{text-decoration:none;color:var(--muted);font-weight:500;font-size:15px;white-space:nowrap}
+nav a:hover{color:var(--ink)}
+h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;line-height:1.08;margin:0}
+.hero{padding:64px 0 48px;display:grid;gap:36px;grid-template-columns:1.25fr 1fr;align-items:center}
+h1{font-size:clamp(38px,7vw,68px);font-weight:800;letter-spacing:-.03em}
+.hero p{color:var(--muted);max-width:54ch;margin:22px 0 28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--ink);margin:0 10px 10px 0}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.term{background:var(--term);color:var(--termink);border-radius:18px;padding:16px 18px;font:13px/1.7 ui-monospace,Menlo,Consolas,monospace;overflow-x:auto;box-shadow:0 18px 40px -18px rgba(20,33,61,.5)}
+.dots{display:flex;gap:6px;margin-bottom:10px}.dots i{width:10px;height:10px;border-radius:50%;background:#4a5b82}
+.term div{white-space:pre;opacity:0;animation:in .01s forwards}
+.term .ok{color:#6ee7a8}.term .dim{color:#8fa2c8}
+.term div:nth-of-type(1){animation-delay:.4s}.term div:nth-of-type(2){animation-delay:1s}.term div:nth-of-type(3){animation-delay:1.4s}.term div:nth-of-type(4){animation-delay:1.8s}.term div:nth-of-type(5){animation-delay:2.2s}.term div:nth-of-type(6){animation-delay:2.8s}.term div:nth-of-type(7){animation-delay:3.2s}
+@keyframes in{to{opacity:1}}
+.cur{display:inline-block;width:8px;height:15px;background:var(--termink);vertical-align:-2px;animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));border-block:1px solid var(--line)}
+.stat{padding:26px 18px 26px 0}
+.stat b{display:block;font:800 clamp(34px,5vw,50px) "Bricolage Grotesque",sans-serif;color:var(--accent)}
+.stat span{color:var(--muted);font-size:15px}
+section{padding:72px 0 0}
+h2{font-size:clamp(30px,5vw,44px);letter-spacing:-.02em}
+.sub{color:var(--muted);margin:10px 0 28px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
+.chip{font:inherit;font-size:14px;font-weight:600;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.fade{opacity:.3;transition:opacity .25s}
+.project{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:28px;margin-bottom:22px;transition:opacity .25s}
+.ph{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.project h3{font-size:26px}
+.year{color:var(--muted);font-size:15px;white-space:nowrap}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin:20px 0}
+.cols h4{margin:0 0 6px;font:700 17px "Bricolage Grotesque",sans-serif;color:var(--accent)}
+.cols p{margin:0;font-size:16px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0 0 18px;list-style:none}
+.tags li{border:1px solid var(--line);border-radius:999px;padding:3px 14px;font-size:14px;color:var(--muted)}
+.links a{font-weight:600;margin-right:18px}
+.diagram{width:100%;height:auto;margin:6px 0 10px;overflow:visible}
+.node rect{fill:var(--bg);stroke:var(--accent);stroke-width:2}
+.node text{fill:var(--ink);font:600 13px "Instrument Sans",sans-serif;text-anchor:middle}
+.node .s{font-weight:400;fill:var(--muted);font-size:11px}
+.wire{stroke:var(--line);stroke-width:2;fill:none}
+.pkt{fill:var(--accent)}
+.demo{border:1.5px dashed var(--line);border-radius:16px;padding:18px;margin:6px 0 20px}
+.demo h4{margin:0 0 4px;font:700 18px "Bricolage Grotesque",sans-serif}
+.demo small{color:var(--muted);display:block;margin-bottom:12px}
+.demo label{display:flex;gap:12px;align-items:center;font-weight:600;font-size:15px;margin-bottom:14px}
+.demo input{flex:1;accent-color:var(--accent)}
+.row{display:grid;grid-template-columns:110px 1fr 54px;gap:10px;align-items:center;font-size:14px;margin:6px 0}
+.bar{height:14px;background:var(--line);border-radius:9px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:9px;transition:width .25s}
+.job{display:grid;grid-template-columns:170px 1fr;gap:10px 24px;padding:24px 0;border-top:1px solid var(--line);transition:opacity .25s}
+.job time{color:var(--muted);font-size:15px}
+.job h3{font-size:22px}
+.job p,.job ul{margin:8px 0 0}.job ul{padding-left:20px}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.how div{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px}
+.how h3{font-size:19px;margin-bottom:6px}.how p{margin:0;font-size:15px;color:var(--muted)}
+.how b{font:800 28px "Bricolage Grotesque",sans-serif;color:var(--accent);display:block}
+.kit{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+.kit h3{font-size:20px;margin-bottom:12px}
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.cert{border:1px solid var(--line);background:var(--surface);border-radius:14px;padding:16px;font-weight:600;font-size:15px}
+.cert span{display:block;color:var(--muted);font-weight:400;font-size:13px}
+.contact{padding-bottom:72px}
+.contact a.big{font:800 clamp(24px,5vw,42px) "Bricolage Grotesque",sans-serif;color:var(--accent);word-break:break-all}
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:14px}
+@media(max-width:700px){.hero{grid-template-columns:1fr;padding-top:40px}.job{grid-template-columns:1fr}.row{grid-template-columns:80px 1fr 46px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.term div{animation:none;opacity:1}.cur,.pkt{display:none}}
+.jh{margin:26px 0 12px;font:700 20px "Bricolage Grotesque",sans-serif}
+.tlbar{display:flex;gap:14px;align-items:center;margin:0 0 14px}.tlbar .year{white-space:normal}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{position:relative;display:grid;grid-template-columns:34px 1fr;gap:14px;padding:0 0 18px;opacity:.35;transition:opacity .35s}
+.tl li::before{content:"";position:absolute;left:16px;top:30px;bottom:-2px;width:2px;background:var(--line)}
+.tl li:last-child::before{display:none}
+.tl li.on{opacity:1}.tl li.on::before{background:var(--accent)}
+.tl .dot{width:34px;height:34px;border-radius:50%;border:2px solid var(--accent);display:grid;place-items:center;font:700 14px "Bricolage Grotesque",sans-serif;background:var(--surface);color:var(--accent)}
+.tl li.on .dot{background:var(--accent);color:var(--accent-ink)}
+.tl li.cur .dot{box-shadow:0 0 0 6px color-mix(in srgb,var(--accent) 25%,transparent)}
+.tl h5{margin:2px 0 2px;font:700 17px "Bricolage Grotesque",sans-serif}
+.tl h5 span,.pt{font:600 12px "Instrument Sans",sans-serif;color:var(--accent);border:1px solid var(--line);border-radius:999px;padding:1px 9px;margin-left:8px;white-space:nowrap}
+.tl p{margin:0;font-size:15px;color:var(--muted)}
+.grps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.grp h4{margin:0 0 8px;font:700 13px "Instrument Sans",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.cmp{border:1px solid var(--line);border-radius:12px;background:var(--bg);margin-bottom:8px;padding:9px 13px}
+.cmp summary{cursor:pointer;font-weight:600;font-size:15px;overflow-wrap:anywhere}
+.cmp p{margin:8px 0 2px;font-size:14px;color:var(--muted)}
+.awsw{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:var(--bg);padding:8px}
+svg.aws{display:block;min-width:760px;width:100%;height:auto}
+svg.aws text{font-family:"Instrument Sans",sans-serif;fill:var(--ink)}
+svg.aws .l{font-size:12.5px;font-weight:600}svg.aws .m{font-size:10.5px;fill:var(--muted)}svg.aws .c{text-anchor:middle}
+svg.aws .nd{fill:var(--surface);stroke:var(--line);stroke-width:1.5}
+svg.aws .pod{fill:var(--surface);stroke:var(--accent);stroke-width:1.5}svg.aws .dsh{stroke-dasharray:4 3}
+svg.aws .band{fill:none;stroke:var(--line);stroke-width:1.5;stroke-dasharray:3 4}
+svg.aws .bd{fill:none;stroke-width:2;stroke-dasharray:7 5}svg.aws .bl{font-size:12px;font-weight:700}
+svg.aws .aws{stroke:var(--muted);fill:var(--muted)}svg.aws rect.aws{fill:none}
+svg.aws .vpc{stroke:#3f9b3a;fill:#3f9b3a}svg.aws rect.vpc{fill:none}
+svg.aws .eks{stroke:#ed7100;fill:#ed7100}svg.aws rect.eks{fill:none}
+svg.aws .wire{fill:none;stroke:var(--muted);stroke-width:1.8}svg.aws .ext{stroke-dasharray:3 4}
+svg.aws .fl{stroke-dasharray:6 5;animation:dash 1s linear infinite}@keyframes dash{to{stroke-dashoffset:-11}}
+svg.aws .ah{fill:var(--muted)}
+svg.aws circle{fill:var(--accent);transition:r .15s}svg.aws .bn{fill:var(--accent-ink);font-size:11px;font-weight:700;text-anchor:middle}
+svg.aws .hl .nd,svg.aws .hl .pod,svg.aws .hl .band{stroke:var(--accent);stroke-width:3}svg.aws .hl circle{r:13}
+svg.aws .hl .bd.eks{stroke-width:4}
+svg.aws [data-s]{transition:opacity .2s}svg.aws.dim [data-s]:not(.hl){opacity:.4}
+.leg{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.leg li{display:grid;grid-template-columns:28px 1fr;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;cursor:pointer;background:var(--bg)}
+.leg li.on{border-color:var(--accent);background:var(--surface)}
+.leg b{width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-size:13px}
+.leg h5{margin:0;font:700 15px "Bricolage Grotesque",sans-serif}.leg p{margin:2px 0 0;font-size:13.5px;color:var(--muted)}
+@media(prefers-reduced-motion:reduce){svg.aws .fl{animation:none}}
+.dg{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+.demo label{display:grid;grid-template-columns:130px 1fr 38px;gap:10px;align-items:center;font-weight:500;font-size:14px;margin-bottom:10px}
+.out{font:13px ui-monospace,Menlo,Consolas,monospace;color:var(--muted);margin-bottom:8px;overflow-wrap:anywhere}
+.out b{display:block;font:800 40px "Bricolage Grotesque",sans-serif;color:var(--accent)}
+#dc{width:100%;height:auto;background:var(--bg);border-radius:10px;margin-bottom:6px}
+@media(max-width:700px){.dg{grid-template-columns:1fr}}
+
+::selection{background:var(--accent);color:var(--accent-ink)}
+.gt{background:linear-gradient(90deg,var(--accent),#9b6bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero{position:relative;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:-40px -22px auto;height:440px;z-index:-1;pointer-events:none;background:radial-gradient(620px 300px at 12% 15%,color-mix(in srgb,var(--accent) 24%,transparent),transparent 70%),radial-gradient(520px 300px at 92% 8%,color-mix(in srgb,#9b6bff 22%,transparent),transparent 70%)}
+.hero::after{content:"";position:absolute;inset:-40px -22px 0;z-index:-1;pointer-events:none;background-image:radial-gradient(var(--line) 1px,transparent 1px);background-size:22px 22px;-webkit-mask-image:linear-gradient(#000,transparent 75%);mask-image:linear-gradient(#000,transparent 75%);opacity:.7}
+.pill{display:inline-flex;gap:9px;align-items:center;font-size:14px;font-weight:600;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 15px 5px 12px;margin-bottom:20px}
+.pill i{width:9px;height:9px;border-radius:50%;background:var(--ok);animation:pu 1.8s infinite}
+@keyframes pu{0%{box-shadow:0 0 0 0 rgba(47,191,113,.6)}70%,100%{box-shadow:0 0 0 9px rgba(47,191,113,0)}}
+.term{box-shadow:0 26px 60px -22px color-mix(in srgb,var(--accent) 60%,transparent)}
+.stat b{background:linear-gradient(90deg,var(--accent),#9b6bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.project{position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s,border-color .25s,opacity .25s}
+.project::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,var(--accent),#9b6bff)}
+.project:hover{transform:translateY(-3px);box-shadow:0 20px 44px -24px color-mix(in srgb,var(--accent) 65%,transparent);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.tags li{transition:border-color .2s,color .2s,transform .2s}.tags li:hover{border-color:var(--accent);color:var(--ink);transform:translateY(-1px)}
+.btn{transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px)}.btn.main:hover{box-shadow:0 12px 26px -12px var(--accent)}
+.job time{color:var(--accent);font-weight:600}
+.how div,.cert,.leg li{transition:transform .2s,border-color .2s}.how div:hover,.cert:hover{transform:translateY(-3px);border-color:var(--accent)}
+.prog{position:absolute;left:0;bottom:-1px;height:3px;width:0;background:linear-gradient(90deg,var(--accent),#9b6bff)}
+.tg{flex:none;font:inherit;font-size:18px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;margin-left:14px}
+nav a{padding:4px 0;transition:color .2s}nav a.act{color:var(--ink);box-shadow:0 2px 0 var(--accent)}
+.rv:not(.in){opacity:0;transform:translateY(18px)}.rv{transition:opacity .6s,transform .6s}
+@media(prefers-reduced-motion:reduce){.rv:not(.in){opacity:1;transform:none}.pill i{animation:none}.project:hover{transform:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#">Dipak Neupane</a>
+<nav aria-label="Sections"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#how">How I work</a><a href="#toolkit">Toolkit</a><a href="#contact">Contact</a></nav><button class="tg" id="tg" type="button" aria-label="Switch light or dark mode">◐</button></div><div class="prog" id="prog"></div></header>
+
+<main class="wrap">
+<div class="hero">
+<div>
+<div class="pill"><i></i>Open to backend and cloud roles</div><h1>I build backend systems that <span class="gt">keep money moving.</span></h1>
+<p>I’m Dipak, a software engineer in Auckland with 7+ years in fintech and distributed systems. I design Java microservices, run them on Kubernetes and AWS, and move data with Kafka and Spark. I recently finished a Master of Software Engineering and I’m looking for my next backend or cloud role.</p>
+<a class="btn main" href="mailto:dipakaanupam@gmail.com" target="_blank" rel="noopener noreferrer">Email me</a><a class="btn" href="https://github.com/DipakNeupane1" target="_blank" rel="noopener noreferrer">GitHub</a>
+</div>
+<div class="term" aria-label="Animated terminal showing a Kubernetes deployment">
+<div class="dots"><i></i><i></i><i></i></div>
+<div>$ kubectl get pods -n narrator</div>
+<div class="dim">NAME                          READY  STATUS</div>
+<div>narrator-api-gateway-7c9d…   1/1  <span class="ok">Running</span></div>
+<div>narrator-users-5b…         1/1  <span class="ok">Running</span></div>
+<div>narrator-community-service-2f…  1/1  <span class="ok">Running</span></div>
+<div class="dim">$ mvn clean test sonar:sonar</div>
+<div><span class="ok">✔</span> coverage 80%+ <span class="cur"></span></div>
+</div>
+</div>
+
+<div class="stats">
+<div class="stat"><b data-n="7" data-s="+">0</b><span>years building backend systems</span></div>
+<div class="stat"><b data-n="80" data-s="%+">0</b><span>unit test coverage, checked with SonarQube</span></div>
+<div class="stat"><b data-n="100" data-s="+">0</b><span>pull requests reviewed</span></div>
+<div class="stat"><b data-n="4" data-s="">0</b><span>cloud and data certifications</span></div>
+</div>
+
+<section id="work">
+<h2>Systems I’ve built</h2>
+<p class="sub">Tap a skill to highlight the work that used it.</p>
+<div class="chips" id="chips" role="group" aria-label="Filter by skill"></div>
+
+<article class="project" data-tags="Java Kafka Kubernetes AWS PostgreSQL Microservices">
+<div class="ph"><h3>The Narrator</h3><span class="year">Apr to Jul 2026</span></div>
+<p style="color:var(--muted);margin:6px 0 0">Master of Software Engineering capstone, built solo.</p>
+<div class="cols">
+<div><h4>The problem</h4><p>Creators need a place to publish structured stories, build an audience, and reach readers in real time as traffic grows.</p></div>
+<div><h4>What I built</h4><p>A React front end, a Helidon MicroProfile API gateway with centralised JWT validation, five backend services, a shared library, Kafka messaging, and rank scores for stories and organisations.</p></div>
+<div><h4>The result</h4><p>Everything backend runs on one AWS EKS cluster in us-east-1: the gateway, five services, Kafka, and Postgres on an EBS-backed StatefulSet. A GitHub Actions pipeline pushes images to ECR (six repositories) and rolls them out. The React app is served from S3 and an ALB ingress fronts the cluster. Backend analysed in SonarQube at 80%+ coverage.</p></div>
+</div>
+<h4 class="jh">Cloud architecture on AWS</h4><p class="year" style="margin:0 0 10px;white-space:normal">Hover or tap a step below to highlight it on the diagram. Scroll sideways on small screens.</p><div class="awsw"><svg class="aws" viewBox="0 0 1030 520" role="img" aria-label="AWS architecture: users reach the React app on S3 and the ALB ingress, which forwards to the API gateway and five services in an EKS cluster with Kafka and PostgreSQL; GitHub Actions pushes images to ECR and rolls out to EKS"><defs><marker id="ar" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8z" class="ah"/></marker></defs><rect class="bd aws" x="180" y="8" width="700" height="505" rx="12"/><text class="bl aws" x="194" y="27">AWS Cloud</text><rect class="bd vpc" x="205" y="128" width="665" height="295" rx="12"/><text class="bl vpc" x="219" y="146">VPC</text><g data-s="7"><rect class="bd eks" x="355" y="145" width="495" height="265" rx="12"/><text class="bl eks" x="369" y="162">Amazon EKS cluster, us-east-1</text><text class="m" x="610" y="162">Kubernetes 1.34 · 3 t3.small nodes</text></g><g data-s="3"><rect class="band" x="370" y="238" width="470" height="106" rx="10"/><text class="m" x="382" y="251">Backend services · Helidon MicroProfile</text></g><g data-s="1"><rect class="nd" x="10" y="30" width="130" height="44" rx="10"/><text class="l c" x="75.0" y="51.0">Users</text><text class="m c" x="75.0" y="64.0">and organisations</text></g><g data-s="1"><rect class="nd" x="225" y="40" width="170" height="54" rx="10"/><rect x="234" y="55" width="24" height="24" rx="5" fill="#7aa116"/><text class="l" x="267" y="66">S3 bucket</text><text class="m" x="267" y="80">React static website</text></g><g data-s="1 2"><rect class="nd" x="222" y="170" width="128" height="54" rx="10"/><rect x="231" y="185" width="24" height="24" rx="5" fill="#8c4fff"/><text class="l" x="264" y="196">ALB ingress</text><text class="m" x="264" y="210">Internet-facing, HTTP</text></g><g data-s="2 3"><rect class="pod" x="375" y="175" width="140" height="38" rx="8"/><text class="l c" x="445" y="191" style="font-size:11.5px">api-gateway</text><text class="m c" x="445" y="205">port 8088 · JWT HS256</text></g><g data-s="3"><rect class="pod" x="375" y="256" width="140" height="38" rx="8"/><text class="l c" x="445" y="272" style="font-size:11.5px">users</text><text class="m c" x="445" y="286">Auth, profiles · :8080</text></g><g data-s="3"><rect class="pod" x="520" y="256" width="140" height="38" rx="8"/><text class="l c" x="590" y="272" style="font-size:11.5px">notification-service</text><text class="m c" x="590" y="286">Email alerts · :8081</text></g><g data-s="3"><rect class="pod" x="665" y="256" width="140" height="38" rx="8"/><text class="l c" x="735" y="272" style="font-size:11.5px">narrative-service</text><text class="m c" x="735" y="286">Stories · :8082</text></g><g data-s="3"><rect class="pod" x="375" y="300" width="140" height="38" rx="8"/><text class="l c" x="445" y="316" style="font-size:11.5px">organisation-service</text><text class="m c" x="445" y="330">Orgs, ranking · :8083</text></g><g data-s="3"><rect class="pod" x="520" y="300" width="140" height="38" rx="8"/><text class="l c" x="590" y="316" style="font-size:11.5px">community-service</text><text class="m c" x="590" y="330">Follow graph · :8084</text></g><g data-s="3"><rect class="pod dsh" x="665" y="300" width="140" height="38" rx="8"/><text class="l c" x="735" y="316" style="font-size:11.5px">commons</text><text class="m c" x="735" y="330">narrator-commons library</text></g><g data-s="4"><rect class="pod" x="375" y="362" width="140" height="38" rx="8"/><text class="l c" x="445" y="378" style="font-size:11.5px">Kafka (KRaft)</text><text class="m c" x="445" y="392">Topic: narrative.published</text></g><g data-s="4"><rect class="pod" x="540" y="362" width="140" height="38" rx="8"/><text class="l c" x="610" y="378" style="font-size:11.5px">PostgreSQL 15</text><text class="m c" x="610" y="392">StatefulSet + EBS volume</text></g><g data-s="6"><rect class="nd" x="225" y="445" width="150" height="54" rx="10"/><rect x="234" y="460" width="24" height="24" rx="5" fill="#ed7100"/><text class="l" x="267" y="471">ECR</text><text class="m" x="267" y="485">6 image repositories</text></g><g data-s="8"><rect class="nd" x="690" y="445" width="160" height="54" rx="10"/><rect x="699" y="460" width="24" height="24" rx="5" fill="#7aa116"/><text class="l" x="732" y="471">S3 media bucket</text><text class="m" x="732" y="485">Images and photos</text></g><g data-s="5"><rect class="nd" x="10" y="130" width="130" height="44" rx="10"/><text class="l c" x="75.0" y="151.0">Developer</text><text class="m c" x="75.0" y="164.0">git push</text></g><g data-s="5"><rect class="nd" x="10" y="200" width="130" height="44" rx="10"/><text class="l c" x="75.0" y="221.0">GitHub repo</text><text class="m c" x="75.0" y="234.0">source and PRs</text></g><g data-s="5 6 7"><rect class="nd" x="10" y="270" width="130" height="110" rx="10"/><text class="l c" x="75" y="292">GitHub Actions</text><text class="m c" x="75" y="314">build and test</text><text class="m c" x="75" y="330">SonarQube scan</text><text class="m c" x="75" y="346">docker build + push</text><text class="m c" x="75" y="362">kubectl rollout</text></g><g data-s="8"><rect class="nd" x="895" y="245" width="125" height="36" rx="10"/><text class="l c" x="957.5" y="262.0">SerpApi</text><text class="m c" x="957.5" y="275.0">Google Reviews sync</text></g><g data-s="8"><rect class="nd" x="895" y="290" width="125" height="36" rx="10"/><text class="l c" x="957.5" y="307.0">Gmail SMTP</text><text class="m c" x="957.5" y="320.0">Notification emails</text></g><path class="wire fl" d="M140,46 H225" marker-end="url(#ar)"/><path class="wire fl" d="M140,62 H192 V197 H222" marker-end="url(#ar)"/><path class="wire fl" d="M350,197 H375" marker-end="url(#ar)"/><path class="wire fl" d="M450,221 V238" marker-end="url(#ar)"/><path class="wire fl" d="M450,344 V362" marker-end="url(#ar)"/><path class="wire fl" d="M615,344 V362" marker-end="url(#ar)"/><path class="wire fl" d="M840,330 H860 V472 H850" marker-end="url(#ar)"/><path class="wire fl" d="M75,174 V200" marker-end="url(#ar)"/><path class="wire fl" d="M75,244 V270" marker-end="url(#ar)"/><path class="wire fl" d="M75,380 V472 H225" marker-end="url(#ar)"/><path class="wire fl" d="M140,330 H355" marker-end="url(#ar)"/><path class="wire fl" d="M375,472 H430 V410" marker-end="url(#ar)"/><path class="wire ext" d="M840,268 H895" marker-end="url(#ar)"/><path class="wire ext" d="M840,308 H895" marker-end="url(#ar)"/><text class="m" x="150" y="322">kubectl rollout</text><text class="m" x="82" y="437">push image</text><text class="m" x="382" y="466">pull image</text><g data-s="1"><circle cx="192" cy="130" r="10"/><text class="bn" x="192" y="134">1</text></g><g data-s="2"><circle cx="362" cy="185" r="10"/><text class="bn" x="362" y="189">2</text></g><g data-s="3"><circle cx="450" cy="230" r="10"/><text class="bn" x="450" y="234">3</text></g><g data-s="4"><circle cx="450" cy="353" r="10"/><text class="bn" x="450" y="357">4</text></g><g data-s="5"><circle cx="75" cy="257" r="10"/><text class="bn" x="75" y="261">5</text></g><g data-s="6"><circle cx="75" cy="430" r="10"/><text class="bn" x="75" y="434">6</text></g><g data-s="7"><circle cx="250" cy="330" r="10"/><text class="bn" x="250" y="334">7</text></g><g data-s="8"><circle cx="860" cy="400" r="10"/><text class="bn" x="860" y="404">8</text></g></svg></div><ol class="leg"><li tabindex="0" data-n="1"><b>1</b><div><h5>Users reach the app</h5><p>The React frontend is served from an S3 static website, and API traffic goes to the internet-facing ALB ingress over HTTP.</p></div></li><li tabindex="0" data-n="2"><b>2</b><div><h5>ALB ingress to gateway</h5><p>The ALB forwards into the EKS cluster (us-east-1, Kubernetes 1.34, 3 t3.small nodes) and on to narrator-api-gateway.</p></div></li><li tabindex="0" data-n="3"><b>3</b><div><h5>Gateway and five services</h5><p>The gateway (port 8088) validates JWTs (HS256) and routes by path to users (auth, profiles), narrative (stories), organisation (orgs, ranking), notification (email alerts), and community (follow graph). They share the narrator-commons library.</p></div></li><li tabindex="0" data-n="4"><b>4</b><div><h5>Data layer</h5><p>PostgreSQL 15 runs as a StatefulSet with an EBS volume. Apache Kafka (KRaft) carries the narrative.published topic.</p></div></li><li tabindex="0" data-n="5"><b>5</b><div><h5>GitHub pipeline</h5><p>A push to GitHub triggers GitHub Actions to build, test, and scan with SonarQube.</p></div></li><li tabindex="0" data-n="6"><b>6</b><div><h5>Push to ECR</h5><p>Actions builds the Docker images and pushes them to AWS ECR, which holds 6 image repositories.</p></div></li><li tabindex="0" data-n="7"><b>7</b><div><h5>Roll out to EKS</h5><p>Actions runs kubectl rollout so the cluster pulls the new images from ECR.</p></div></li><li tabindex="0" data-n="8"><b>8</b><div><h5>Media and third parties</h5><p>An S3 media bucket stores images and photos. Gmail SMTP sends notification emails and SerpApi syncs Google Reviews.</p></div></li></ol>
+<div class="demo">
+<h4>The ranking formula, live</h4>
+<small>Narrative score = (H×2 + T×1 − NH×1.5 + R×1) × e<sup>−λ × days</sup>, with λ = 0.05. H is helpful votes, T thanks, NH not helpful, R average rating. Move the sliders to see it recalculate.</small>
+<div class="dg"><div id="ctl"></div><div><div id="out" class="out"></div><svg id="dc" viewBox="0 0 300 110" role="img" aria-label="Score decaying over 60 days"></svg></div></div>
+</div>
+<ul class="tags"><li>Java</li><li>Helidon</li><li>React</li><li>Kafka KRaft</li><li>JavaMail</li><li>PostgreSQL</li><li>Kubernetes</li><li>AWS EKS</li><li>Docker</li><li>GitHub Actions</li><li>Hibernate</li><li>JWT</li><li>JUnit 5</li><li>Mockito</li><li>SonarQube</li></ul>
+<div class="links"><a href="https://github.com/DipakNeupane1" target="_blank" rel="noopener noreferrer">Source on GitHub</a></div>
+</article>
+
+<article class="project" data-tags="Java Kafka Kubernetes Spark">
+<div class="ph"><h3>European Central Bank SPACE</h3><span class="year">2022 to 2025</span></div>
+<div class="cols">
+<div><h4>The problem</h4><p>Gigabytes of time-series data arrived from multiple sources through requests. It had to be verified, validated, and stored, then disseminated to destinations such as HDFS server environments and FAME.</p></div>
+<div><h4>What I built</h4><p>Java Spring Boot backend services that verify and validate incoming time-series data and store it. Spark and Kafka pipelines on the Cloudera big data ecosystem (HDFS, YARN, Hive, HBase) disseminate it onward, and Kubernetes workloads keep the services highly available. I also fixed production issues.</p></div>
+<div><h4>The result</h4><p>Unit test coverage raised to 80%+ across several services and 100+ pull requests reviewed.</p></div>
+</div>
+<ul class="tags"><li>Java</li><li>Spring Boot</li><li>Spark</li><li>Kafka</li><li>HDFS</li><li>YARN</li><li>Hive</li><li>HBase</li><li>Cloudera</li><li>Kubernetes</li><li>SonarQube</li></ul>
+</article>
+
+<article class="project" data-tags="Java Microservices">
+<div class="ph"><h3>Remittance platform v4</h3><span class="year">2021 to 2022</span></div>
+<p style="color:var(--muted);margin:6px 0 0">Machnet Technologies. Middleware for sending and receiving money.</p>
+<div class="cols">
+<div><h4>The problem</h4><p>Getting a money transfer licence in the US is a big barrier. It costs a lot, and settlement has to be funded upfront, so smaller MTOs struggled to start offering international transfers.</p></div>
+<div><h4>What I built</h4><p>Version 4 of the remittance middleware, an incremental upgrade of the legacy version 3, redesigned with microservice and event-driven architecture. It exposes APIs that MTOs plug into their own app or website. I also built the tier-based KYC module.</p></div>
+<div><h4>The result</h4><p>An MTO launches with one API integration and builds its own app or website on top. The platform handles settlement through ACH, banks, and wallets, and payouts go to many payout organisations worldwide, by bank deposit or cash in hand.</p></div>
+</div>
+<ul class="tags"><li>Java</li><li>Microservices</li><li>Event-driven</li><li>REST APIs</li><li>KYC</li></ul>
+</article>
+
+<article class="project" data-tags="Java Microservices">
+<div class="ph"><h3>RemitPulse, IRH and branchless banking</h3><span class="year">2018 to 2021</span></div>
+<p style="color:var(--muted);margin:6px 0 0">Citytech. Money transfer and banking systems built for Nepal.</p>
+<div class="cols">
+<div><h4>The problem</h4><p>Customers in the UK and Australia needed a reliable way to send money to Nepal, and people in rural Nepal had no bank branch nearby.</p></div>
+<div><h4>Branchless banking</h4><p>A tablet-based bank for agents in rural Nepal. They open accounts, capture photos and biometrics (fingerprint and face), and send or pay out transactions. It connects to core banking through a middleware that speaks ISO messages, and admins see transactions, beneficiaries, and customers in a web portal. I also worked on the front end with PrimeFaces, JavaScript, and CSS.</p></div>
+<div><h4>RemitPulse</h4><p>A remittance platform for UK and Australian customers sending money to Nepal. Payouts go through money transfer organisations, banks, or cash. It exposes APIs for mobile apps, POS devices, and third parties, settles in any currency, and has configurable beneficiary and transaction forms. I also built custom POS device apps.</p></div>
+<div><h4>International Remit Hub (IRH)</h4><p>A remittance hub where multiple money transfer organisations call one set of APIs to send money around the world. I built the IRH APIs.</p></div>
+</div>
+<ul class="tags"><li>Java</li><li>Helidon</li><li>KumuluzEE</li><li>ISO messaging</li><li>PrimeFaces</li><li>JavaScript</li><li>CSS</li><li>REST APIs</li></ul>
+</article>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<p class="sub">Seven years of backend work, from intern to senior developer.</p>
+<div class="job" data-tags="Java Kafka Kubernetes Spark"><time>May 2022 to May 2025</time><div><h3>Senior Software Developer, Ultra Tendency Nepal</h3><ul><li>Built Java Spring Boot backend services for the European Central Bank’s SPACE project, handling large time-series datasets.</li><li>Designed and deployed Kubernetes workloads, and built Spark, Kafka, and HDFS pipelines.</li><li>Coordinated with offshore teams, and used GitHub Copilot and Cursor to cut boilerplate.</li></ul></div></div>
+<div class="job" data-tags="Java Microservices Kafka"><time>Sept 2021 to May 2022</time><div><h3>Senior Software Engineer, Machnet Technologies</h3><ul><li>Worked on version 4 of the remittance middleware, redesigned with microservice and event-driven architecture from the legacy version 3.</li><li>Exposed APIs that money transfer organisations integrate to send and receive money worldwide.</li><li>Built the tier-based KYC module that verifies customers through third-party providers.</li></ul></div></div>
+<div class="job" data-tags="Java Microservices"><time>Jul 2020 to Sept 2021</time><div><h3>Software Engineer II, Citytech</h3><ul><li>Developed RemitPulse backend features and mentored junior engineers.</li><li>Worked with the architect, lead, and CTO on design, using Agile Scrum.</li></ul></div></div>
+<div class="job" data-tags="Java Microservices"><time>Jul 2018 to Jul 2020</time><div><h3>Software Engineer I and Intern, Citytech</h3><ul><li>Built APIs for a custom mobile app builder and the Branchless Banking platform, including core banking integration over ISO messaging.</li><li>Built POS device applications and configurable remittance forms for the remittance engine.</li><li>Moved Java 7 apps to Helidon and KumuluzEE, and built International Remit Hub APIs.</li></ul></div></div>
+<div class="job"><time>2013 to 2026</time><div><h3>Education</h3><p>Master of Software Engineering, Yoobee Colleges, Auckland (2025 to 2026). Bachelor of Computer Application, Oxford College of Engineering and Management, Nepal (2013 to 2017).</p></div></div>
+</section>
+
+<section id="how">
+<h2>How I work</h2>
+<p class="sub">Habits that show up across every role.</p>
+<div class="how">
+<div><b>TDD</b><h3>Tests first</h3><p>Started with test-driven development as an intern and still push coverage above 80%.</p></div>
+<div><b>100+</b><h3>Careful reviews</h3><p>I review pull requests for quality and give architecture suggestions.</p></div>
+<div><b>Scrum</b><h3>Team player</h3><p>I work with architects, product owners, offshore teams, and mentor juniors.</p></div>
+<div><b>AI</b><h3>Faster delivery</h3><p>I use Copilot and Cursor daily, and I’m learning LLMs and RAG next.</p></div>
+</div>
+</section>
+
+<section id="toolkit">
+<h2>Toolkit</h2>
+<p class="sub">What I reach for most.</p>
+<div class="kit">
+<div><h3>Programming languages</h3><ul class="tags"><li>Java</li><li>Python</li></ul></div>
+<div><h3>Frameworks</h3><ul class="tags"><li>Spring Boot</li><li>Helidon</li><li>Hibernate</li><li>FastAPI</li></ul></div>
+<div><h3>Cloud and DevOps</h3><ul class="tags"><li>AWS</li><li>Azure</li><li>Docker</li><li>Ansible</li><li>Helm</li><li>Kubernetes</li><li>GitHub Actions</li><li>CI/CD</li></ul></div>
+<div><h3>Messaging</h3><ul class="tags"><li>Apache Kafka</li><li>RabbitMQ</li><li>JMS</li></ul></div>
+<div><h3>Databases</h3><ul class="tags"><li>PostgreSQL</li><li>MySQL</li><li>MariaDB</li><li>HBase</li></ul></div>
+<div><h3>Testing</h3><ul class="tags"><li>JUnit</li><li>Mockito</li><li>SonarQube</li></ul></div>
+<div><h3>Tools</h3><ul class="tags"><li>IntelliJ IDEA</li><li>VS Code</li><li>Postman</li><li>Jira</li><li>Confluence</li><li>Jenkins</li></ul></div>
+</div>
+<h3 style="margin:36px 0 16px;font-size:24px">Certifications</h3>
+<div class="certs">
+<div class="cert">Azure Developer Associate<span>AZ-204</span></div>
+<div class="cert">Azure Data Engineer Associate<span>DP-203</span></div>
+<div class="cert">Databricks Associate Developer<span>Apache Spark 3.0</span></div>
+<div class="cert">Kubernetes Application Developer<span>CKAD</span></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Get in touch</h2>
+<p class="sub">Looking for backend, cloud, or platform engineering roles in Auckland and beyond.</p>
+<a class="big" id="em" href="mailto:dipakaanupam@gmail.com" target="_blank" rel="noopener noreferrer">dipakaanupam@gmail.com</a><br><button class="btn" id="cp" type="button" style="font:inherit;font-weight:600;cursor:pointer;background:none;color:var(--ink);margin-top:16px">Copy email</button>
+<p class="links" style="margin-top:18px"><a href="https://www.linkedin.com/in/dipak-neupane-ab727a128/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/DipakNeupane1" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+</section>
+</main>
+<footer><div class="wrap">Built by Dipak Neupane, Auckland.</div></footer>
+<script>
+// Count-up stats
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);
+const el=e.target,n=+el.dataset.n,s=el.dataset.s;let t0;
+const step=t=>{t0=t0||t;const p=Math.min((t-t0)/1200,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+(p===1?s:"");if(p<1)requestAnimationFrame(step)};
+requestAnimationFrame(step)}),{threshold:.6});
+document.querySelectorAll(".stat b[data-n]").forEach(el=>io.observe(el));
+// Skill filter
+const tags=["Java","Kafka","Kubernetes","AWS","Spark","PostgreSQL","Microservices"];
+const items=[...document.querySelectorAll("[data-tags]")],box=document.getElementById("chips");let on=null;
+tags.forEach(t=>{const b=document.createElement("button");b.className="chip";b.textContent=t;b.setAttribute("aria-pressed","false");
+b.onclick=()=>{on=on===t?null:t;box.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",String(c.textContent===on)));
+items.forEach(i=>i.classList.toggle("fade",!!on&&!i.dataset.tags.split(" ").includes(on)))};box.appendChild(b)});
+// Ranking calculator
+const C=[["H","Helpful votes",0,100,1,40],["T","Thanks",0,50,1,15],["NH","Not helpful",0,30,1,3],["R","Average rating",0,5,.1,4.5],["D","Days since created",0,60,1,7]],V={};
+const ctl=document.getElementById("ctl"),out=document.getElementById("out"),dc=document.getElementById("dc");
+C.forEach(c=>{V[c[0]]=c[5];const l=document.createElement("label"),sp=document.createElement("span"),i=document.createElement("input"),o=document.createElement("output");
+sp.textContent=c[1];i.type="range";i.min=c[2];i.max=c[3];i.step=c[4];i.value=c[5];o.textContent=c[5];
+i.oninput=()=>{V[c[0]]=+i.value;o.textContent=i.value;calc()};l.append(sp,i,o);ctl.append(l)});
+function calc(){const raw=V.H*2+V.T-V.NH*1.5+V.R,dec=Math.exp(-.05*V.D),sc=raw*dec;
+out.textContent="";const a=document.createElement("div"),b=document.createElement("b");
+a.textContent="("+V.H+"×2 + "+V.T+"×1 − "+V.NH+"×1.5 + "+V.R+"×1) × e^(−0.05×"+V.D+")";
+b.textContent=sc.toFixed(1);out.append(a,b);
+const m=Math.max(raw,1);let d="";for(let k=0;k<=60;k++){const y=Math.min(105,Math.max(5,105-raw*Math.exp(-.05*k)/m*95));d+=(k?"L":"M")+(k*5).toFixed(1)+","+y.toFixed(1)}
+const cy=Math.min(105,Math.max(5,105-sc/m*95));
+dc.innerHTML='<path d="'+d+'" fill="none" stroke="var(--accent)" stroke-width="2.5"/><line x1="'+V.D*5+'" x2="'+V.D*5+'" y1="5" y2="105" stroke="var(--line)" stroke-dasharray="3 3"/><circle cx="'+V.D*5+'" cy="'+cy.toFixed(1)+'" r="5" fill="var(--accent)"/>'}
+calc();
+
+
+
+const gs=[...document.querySelectorAll("svg.aws [data-s]")],lis=[...document.querySelectorAll(".leg li")];let sel=null,hov=null;
+function ap(){const n=hov||sel;gs.forEach(g=>g.classList.toggle("hl",!!n&&g.dataset.s.split(" ").includes(n)));lis.forEach(l=>l.classList.toggle("on",l.dataset.n===n));document.querySelector("svg.aws").classList.toggle("dim",!!n)}
+lis.forEach(l=>{const n=l.dataset.n;l.onmouseenter=l.onfocus=()=>{hov=n;ap()};l.onmouseleave=l.onblur=()=>{hov=null;ap()};l.onclick=()=>{sel=sel===n?null:n;ap()};l.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();l.onclick()}}});
+gs.forEach(g=>{g.style.cursor="pointer";g.onclick=()=>{sel=g.dataset.s.split(" ")[0];ap()}});
+
+document.getElementById("cp").onclick=async()=>{const b=document.getElementById("cp");try{await navigator.clipboard.writeText("dipakaanupam@gmail.com");b.textContent="Copied"}catch(_){const r=document.createRange();r.selectNodeContents(document.getElementById("em"));const g=getSelection();g.removeAllRanges();g.addRange(r);b.textContent="Selected, press Ctrl/Cmd+C"}setTimeout(()=>b.textContent="Copy email",2500)};
+
+(()=>{const rm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(!rm){const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const el=e.target;el.classList.add("in");o.unobserve(el);setTimeout(()=>el.style.transitionDelay="",900)}}),{threshold:.12});
+document.querySelectorAll("section h2,.project,.how div,.cert,.job,.kit>div,.stat").forEach((el,i)=>{el.classList.add("rv");el.style.transitionDelay=(i%4)*70+"ms";o.observe(el)})}
+const pg=document.getElementById("prog");
+addEventListener("scroll",()=>{const h=document.documentElement;pg.style.width=Math.min(100,h.scrollTop/Math.max(1,h.scrollHeight-h.clientHeight)*100)+"%"},{passive:true});
+const ls=[...document.querySelectorAll("nav a")];
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)ls.forEach(a=>a.classList.toggle("act",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-40% 0px -55% 0px"});
+document.querySelectorAll("section[id]").forEach(x=>so.observe(x));
+document.getElementById("tg").onclick=()=>{const r=document.documentElement,d=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;r.dataset.theme=d?"light":"dark"};
+})();
+</script>
+</body>
+</html>
